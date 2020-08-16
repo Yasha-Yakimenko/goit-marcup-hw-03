@@ -478,12 +478,12 @@ ul {
   height: 90px;
   margin-right: 30px;
 }
-.customer-svg {
+.customer-jpg {
   align-items: center;
   min-height: 90px;
 }
 
-.customer-svg {
+.customer-jpg {
   display: flex;
   justify-content: center;
 }
