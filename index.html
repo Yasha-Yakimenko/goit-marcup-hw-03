@@ -15,18 +15,21 @@
 <body>
     <!-- header and navbar -->
     <header>
-        <nav>
+        <div class="container head">
+
+        <nav class="main-nav">
+
             <a class="logo" href="./index.html">
                 <span>Web</span>
                 Studio
             </a>
-            <ul>
+            <ul class="page-nav">
                 <li><a class="nav-link active" href="">Студия</a></li>
                 <li><a class="nav-link" href="portfolio.html">Портфолио</a></li>
                 <li><a class="nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="main-contacts">
             <li>
                 <a class="con-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -34,20 +37,27 @@
                 <a class="con-link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
+
     </header>
     <main>
         <!-- hero -->
-        <section>
+        <section class="overlay-banner">
+            <div class="overlay-container">
             <h1 class="overlay">Эффективные решения для вашего бизнеса</h1>
 
             <button type="button">Заказать услугу</button>
+            </div>
         </section>
         <!-- our-advantages-section -->
-        <section>
+
+        <section class="features-list">
+            <div class="container">
             <h2 class="hidden">Наши преимущества</h2>
-            <ul>
+            <ul class="advantages">
                 <li>
                     <img class="features" src="./about/images1/antenna4.jpg" alt="antenna image" width="70" />
+                    <div class="face-picture"></div>
                     <h3 class="feature-name">Внимание к деталям</h3>
                     <p class="feature-desc">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
@@ -55,6 +65,7 @@
                 </li>
                 <li>
                     <img class="features" src="./about/images1/clock 1.jpg" alt="clock image" width="70" />
+                    <div class="face-picture"></div>
                     <h3 class="feature-name">Пунктуальность</h3>
                     <p class="feature-desc">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой
@@ -62,6 +73,7 @@
                 </li>
                 <li>
                     <img class="features" src="./about/images1/diagram 1.jpg" alt="pc image" width="70" />
+                    <div class="face-picture"></div>
                     <h3 class="feature-name">Планирование</h3>
                     <p class="feature-desc">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
@@ -69,26 +81,29 @@
                 </li>
                 <li>
                     <img class="features" src="./about/images1/astronaut1.jpg" alt="spaceman image" width="70" />
+                    <div class="face-picture"></div>
                     <h3 class="feature-name">Современные технологии</h3>
                     <p class="feature-desc">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- what-are-we-doing-section -->
-        <section>
+        <section class="what-we-do">
+            <div class="container">
             <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li>
+            <ul class="inventions">
+                <li class="inventions-item">
                     <a href=""><img src="./about/images1/img(32).jpg" alt="laptop image" width="370" /></a>
                     <h3 class="overlay">Десктопные приложения</h3>
                 </li>
-                <li>
+                <li class="inventions-item">
                     <a href=""><img src="./about/images1/box.jpg" alt="cell phone image" width="370" /></a>
                     <h3 class="overlay">Мобильные приложения</h3>
                 </li>
-                <li>
+                <li class="inventions-item">
                     <a href=""><img src="./about/images1/img(29).jpg" alt="mac image" width="370" /></a>
                     <h3 class="overlay">Дизайнерские решения</h3>
                 </li>
@@ -96,17 +111,19 @@
         </section>
         <!-- our-team-section -->
         <section class="our-team">
+            <div class="container">
             <h2>Наша команда</h2>
 
             <!-- our-team-list -->
             <ul class="team">
                 <li>
                     <img src="./about/images1/img10.jpg" alt="фото Николай Кучеренко" width="270" />
-                    <h3 class="employer">Николай Кучеренко</h3>
+                    <!-- <h3 class="employer">Николай Кучеренко</h3> -->
+                    <h3>Николай Кучеренко</h3>
                     <p class="position">Product Designer</p>
 
                     <!-- social-media-links -->
-                    <ul>
+                    <ul class="employer-social">
                         <li>
                             <a href="">
                                 <img src="./about/images1/Client 6 (1).jpg" alt="instagram link" width="20" />
@@ -134,7 +151,7 @@
                     <p p class="position">Frontend Developer</p>
 
                     <!-- social-media-links -->
-                    <ul>
+                    <ul class="employer-social">
                         <li>
                             <a href="">
                                 <img src="./about/images1/Ellipse (6).jpg" alt="instagram link" width="20" />
@@ -164,7 +181,7 @@
                     <p p class="position">Marketing</p>
 
                     <!-- social-media-links -->
-                    <ul>
+                    <ul class="empoloyer-social">
                         <li>
                             <a href=""><img src="./about/images1/Client 6 (1).jpg" alt="instagram link" width="20" /></a>
                         </li>
@@ -186,7 +203,7 @@
                     <p p class="position">UI Designer</p>
 
                     <!-- social-media-links -->
-                    <ul>
+                    <ul class="employer-social">
                         <li>
                             <a href=""><img src="./about/images1/Ellipse (6).jpg" alt="instagram link" width="20" /></a>
                         </li>
@@ -202,48 +219,52 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- regular-customers-section -->
-        <section>
+        <section class="regular-customers">
+            <div class="container">
             <h2>Постоянные клиенты</h2>
             <!-- regular-customers-list -->
-            <ul>
+            <ul class="customers-logo">
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 1.jpg" alt=" компания YA & CO" width="44" />
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 2.jpg" alt=" компания Tagline Here Company" width="40" />
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 3 (1).jpg" alt=" компания Company" width="41" />
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 4 (1).jpg" alt=" компания Foster Peters" width="80" />
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 5 (1).jpg" alt=" компания Brand" width="60" />
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="customers-jpg" href="">
                         <img src="./about/images1/Client 6 (1).jpg" alt=" компания Tag Line Company" width="89" />
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!-- footer-section -->
     <footer>
-        <div>
+        <div class="container footer">
+            <div class="footer-left">
             <a class="footer-logo" href="./index.html">
                 <span>Web</span>
                 Studio
@@ -260,9 +281,10 @@
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
             </address>
         </div>
+        <div class="footer-middle">
         <p><b>присоединяйтесь</b></p>
 
-        <ul>
+        <ul class="footer-social">
             <li>
                 <a href="">
                     <img src="./about/images1/Ellipse (6).jpg" alt="instagram link" width="20" />
@@ -282,8 +304,12 @@
                 <a href=""><img src="./about/images1/Ellipse (9).jpg" alt="linkedin link" width="20" /></a>
             </li>
         </ul>
+        </div>
+        <div class="footer-right"></div>
         <p><b>Подпишитесь на рассылку</b></p>
         <button type="button">Подписаться</button>
+        </div>
+        </div>
     </footer>
 </body>
 
